@@ -1,0 +1,20 @@
+# Node / editor
+node_modules/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# environment
+.env
+
+# npm
+npm-debug.log*
+
+# Local git folder (if this was accidentally copied)
+git/
+
+# Build output
+dist/
+build/
