@@ -1312,7 +1312,7 @@ ul li a:hover {
   font-size: 30px;
   padding-right: 20px;
   position: fixed;
-  right: 3px;
+  right: 20px;
 }
 
 .offcanvas-header {
@@ -1445,7 +1445,7 @@ ul li a:hover {
   #sign-in {
     color: white;
     font-size: 20px;
-    margin-right: 70px;
+    margin-right: 90px;
     transition: all 0.5s ease;
   }
 
@@ -1544,7 +1544,7 @@ ul li a:hover {
     font-size: 28px;
     position: fixed;
     bottom: 66px;
-    right: 10px;
+    right: 20px;
     height: 55px;
     width: 55px;
     border-radius: 50%;
@@ -1560,7 +1560,7 @@ ul li a:hover {
   }
 
   #scrolltotop {
-    right: 18px;
+    right: 28px;
     bottom: 10px;
     top: auto;
     font-size: 12px;
