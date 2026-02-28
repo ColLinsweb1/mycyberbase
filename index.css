@@ -1404,11 +1404,14 @@ ul li a:hover {
   body {
     overflow-x: hidden;
   }
+  
+  
 
   .main-container {
     top: -5px;
     backdrop-filter: blur(10px);
     background: linear-gradient(rgba(8, 6, 28, 1));
+    width: 100%;
   }
 
   .main-section {
@@ -1435,6 +1438,7 @@ ul li a:hover {
 
   #hamburger {
     display: block;
+    overflow-x: hidden;
   }
 
 
@@ -1903,6 +1907,7 @@ ul li a:hover {
 .hire-graduates-container {
   margin-top: 120px;
   background-color: rgba(221, 216, 216, 0.936);
+  width: 100%;
 }
 
 .hire-graduates-heading {
@@ -2193,6 +2198,7 @@ ul li a:hover {
     flex-direction: column;
     gap: 40px;
     padding-left: 10px;
+    width: 100%;
   }
 
   .footer-text {

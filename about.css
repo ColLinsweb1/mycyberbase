@@ -501,6 +501,7 @@ marquee div {
     gap: 120px;
     padding: 15px 20px;
     border-radius: 25px;
+    width: 100%;
     transition: all 0.5s ease;
 }
 
@@ -1397,9 +1398,10 @@ marquee div {
         justify-content: center;
         align-items: center;
         gap: 120px;
-        padding: 15px 20px;
+        padding: 15px 0px;
         flex-direction: column;
         border-radius: 25px;
+        width: 100%;
         transition: all 0.5s ease;
     }
 
