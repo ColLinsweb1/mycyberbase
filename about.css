@@ -1226,7 +1226,7 @@ marquee div {
         font-size: 28px;
         position: fixed;
         bottom: 66px;
-        right: 25px;
+        right: 35px;
         height: 55px;
         width: 55px;
         border-radius: 50%;
@@ -1242,7 +1242,7 @@ marquee div {
     }
 
     #scrolltotop {
-        right: 30px;
+        right: 40px;
         bottom: 10px;
         top: auto;
         font-size: 12px;
