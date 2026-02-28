@@ -138,6 +138,22 @@ ul li a:hover {
   color: transparent;
 }
 
+#sign-in {
+color: white;
+font-size: 20px;
+margin-right: 25px;
+margin-top: 10px;
+transition: all 0.5s ease;
+}
+
+#sign-in:hover {
+  background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
+  background-clip: text;
+  color: transparent;
+  transform: scale(1.3);
+}
+
+
 .get-started {
   white-space: nowrap;
   margin-right: 40px;
@@ -689,7 +705,7 @@ ul li a:hover {
 /* Second Footer Container */
 
 .second-footer {
-  background: linear-gradient(rgba(2, 6, 23, .70));
+  background: linear-gradient(rgba(8, 6, 28, 1)) !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -724,17 +740,16 @@ ul li a:hover {
 
 .offcanvas {
   z-index: 2000;
-      background: linear-gradient(rgba(8, 6, 28, 1));
-
+  background: linear-gradient(rgba(8, 6, 28, 1)) !important;
 }
 
 #hamburger {
   display: none;
   color: rgb(215, 213, 213);
-  font-size: 35px;
+  font-size: 30px;
   padding-right: 20px;
   position: fixed;
-  right: 10px;
+  right: 3px;
 }
 
 .offcanvas-header {
@@ -743,18 +758,18 @@ ul li a:hover {
 
 .offcanvas-title {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .btn-close {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .offcanvas-container {
-  line-height: 80px;
-  font-size: 50px;
+  line-height: 65px;
+  font-size: 30px;
   padding-top: 25px;
 }
 
@@ -764,14 +779,15 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
   text-transform: uppercase;
   color: rgb(213, 210, 210);
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.5px;
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
 }
+
 
 #offcanvas-list2 {
   padding-left: 20px;
@@ -798,7 +814,7 @@ ul li a:hover {
   color: white;
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.5px;
-  font-size: 25px;
+  font-size: 20px;
   transition: all 0.5s ease;
   position: relative;
   cursor: pointer;
@@ -816,7 +832,6 @@ ul li a:hover {
 #offcanvas-social-platform:hover {
   transform: scale(1.3);
 }
-
 
 
 /* RESPONSIVENESS */
@@ -849,31 +864,64 @@ ul li a:hover {
     display: block;
   }
 
+  #sign-in {
+    color: white;
+    font-size: 20px;
+    margin-right: 70px;
+    transition: all 0.5s ease;
+  }
+
+  #sign-in:hover {
+    background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.3);
+  }
+
+
   .main-head {
-    font-size: 45px;
-    margin-bottom: 20px;
-    padding-top: 130px;
+    width: 100%;
+    font-size: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
   }
 
   .sub-head {
+    width: 100%;
     font-size: 20px;
-    line-height: 35px;
+    line-height: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+
   }
 
   .main-btn-container {
     white-space: nowrap;
-    margin: auto;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
     text-align: center;
+
+
   }
 
   .start-learning {
-    font-size: 15px;
-
+    font-size: 13px;
+    margin: 10px 20px;
+    padding: 10px 10px;
   }
 
   .contact-info {
-    font-size: 15px;
+    font-size: 13px;
+    margin: 10px 20px;
+    padding: 9px 10px;
+    margin-left: -5px;
   }
 
   .main-review-img {
@@ -885,6 +933,8 @@ ul li a:hover {
     margin-left: 0px;
     margin-top: 20px;
     padding-bottom: 10px;
+    text-align: center;
+
   }
 
   #whatsappbtn {
@@ -944,12 +994,23 @@ ul li a:hover {
     gap: 55px;
   }
 
-  /* Join Now Container */
-
-  .join-now-container {
-    margin-top: 200px;
+  .form-contact-info-head {
+    margin-bottom: 70px;
   }
 
+  .form-contact-location-text {
+    left: 50px;
+  }
+
+  #contact-shortcut-container2 {
+    padding: 40px 20px;
+  }
+
+  /* Join Now Container */
+
+  .join-now-section {
+    padding: 10px auto !important;
+  }
 
   .join-now-heading {
     font-family: 'JetBrains Mono', monospace;
@@ -974,28 +1035,35 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .sign-up-btn {
     background-color: rgb(232, 229, 229);
     border: none;
-    padding: 12px 20px;
+    padding: 12px 15px;
     border-radius: 5px;
     color: black;
     font-weight: 500;
     text-align: center;
+    font-size: 13px;
   }
 
   .closing-contact-btn {
     background: transparent;
     border-radius: 5px;
     color: white;
-    padding: 9px 20px;
+    padding: 11px 15px;
     border: 2px solid white;
-    font-size: 18px;
+    font-size: 15px;
     margin-left: 10px;
+    font-size: 12px;
+
   }
 
+  /* Footer Section */
 
   .footer-section {
     display: flex;
@@ -1004,6 +1072,12 @@ ul li a:hover {
     flex-direction: column;
     gap: 40px;
     padding-left: 10px;
+  }
+
+  .footer-text {
+    width: 250px;
+    color: rgb(189, 187, 187);
+    font-family: 'JetBrains Mono', monospace;
   }
 
   .second-footer {
@@ -1016,7 +1090,7 @@ ul li a:hover {
     padding-left: 10px;
     padding-right: 10px;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   .learning-path-container,
@@ -1030,7 +1104,30 @@ ul li a:hover {
     align-items: center;
     margin: auto;
     color: white;
+    font-size: 5px;
+    white-space: nowrap;
   }
 
+  .copyright {
+    color: rgb(186, 183, 183);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  #legals {
+    color: rgb(186, 183, 183);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
+
+  .legals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
 }

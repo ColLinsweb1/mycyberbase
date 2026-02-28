@@ -11,6 +11,7 @@ html {
 }
 
 
+
 .services-section1,
 .join-now-container {
   transform: perspective(1000px);
@@ -144,9 +145,26 @@ ul li a:hover {
   color: transparent;
 }
 
+#sign-in {
+  color: white;
+  font-size: 20px;
+  margin-right: 25px;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+
+#sign-in:hover {
+  background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
+  background-clip: text;
+  color: transparent;
+  transform: scale(1.3);
+}
+
+
+
 .get-started {
   white-space: nowrap;
-  margin-right: 40px;
+  margin-right: 20px;
   background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
   padding: 12px 15px;
   border-radius: 5px;
@@ -313,6 +331,7 @@ ul li a:hover {
 
 .college-girl-img {
   width: 73%;
+  filter: brightness(0.8);
 }
 
 /* Whatsapp-btn */
@@ -334,7 +353,25 @@ ul li a:hover {
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s ease;
+  animation: pulse 2s linear infinite;
 }
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 #whatsappbtn.show {
   opacity: 1;
@@ -477,12 +514,12 @@ ul li a:hover {
   position: relative;
   padding-right: 5px;
   transition: all 0.5s ease;
-  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.3);
 }
 
 .services-section1:hover {
   transform: translateY(-4%);
-  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 35px rgba(0, 0, 0, 0.5);
 }
 
 .services-container-emoji {
@@ -524,6 +561,13 @@ ul li a:hover {
   margin-bottom: 20px;
 }
 
+.line2 {
+  margin-top: 30px;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(168, 165, 165);
+}
+
 .service-options {
   line-height: 50px;
   font-weight: 500;
@@ -531,6 +575,7 @@ ul li a:hover {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5px;
   font-size: 14px;
+  padding-top: 10px;
 }
 
 
@@ -543,15 +588,18 @@ ul li a:hover {
 }
 
 .services-learn-more {
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #6a11cb, #9644e2);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+
 }
 
 .service-link {
   text-decoration: none;
-  background: linear-gradient(135deg, #6a11cb, #451f69);
-  background-clip: text;
-  color: transparent;
+  color: white;
 }
 
 /* Why Choose Us Section */
@@ -654,12 +702,14 @@ ul li a:hover {
 /* About Section */
 
 .about-us-container {
-  background: radial-gradient(circle at center, #50545a 0%, #2b2d31 45%, #141518 80%, #0b0c0e 100%);
+  /* background: radial-gradient(circle at center, #50545a 0%, #2b2d31 45%, #141518 80%, #0b0c0e 100%); */
+  background: linear-gradient(rgba(8, 6, 28, 1)) !important;
   margin-top: 130px;
 }
 
 .about-us-container2 {
-  background: radial-gradient(circle at center, #50545a 0%, #2b2d31 45%, #141518 80%, #0b0c0e 100%);
+  /* background: radial-gradient(circle at center, #50545a 0%, #2b2d31 45%, #141518 80%, #0b0c0e 100%); */
+  background: linear-gradient(rgba(8, 6, 28, 1)) !important;
 }
 
 
@@ -686,8 +736,8 @@ ul li a:hover {
 }
 
 #spinner {
-  height: 5vh;
-  background-color: rgb(188, 184, 184);
+  height: 3vh;
+  background-color: rgb(146, 143, 143);
 }
 
 .about-first-text {
@@ -1213,7 +1263,7 @@ ul li a:hover {
 /* Second Footer Container */
 
 .second-footer {
-  background: linear-gradient(rgba(2, 6, 23, .70));
+  background: linear-gradient(rgba(8, 6, 28, 1)) !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1266,18 +1316,18 @@ ul li a:hover {
 
 .offcanvas-title {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .btn-close {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .offcanvas-container {
-  line-height: 80px;
-  font-size: 50px;
+  line-height: 65px;
+  font-size: 30px;
   padding-top: 25px;
 }
 
@@ -1287,12 +1337,12 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
   text-transform: uppercase;
   color: rgb(213, 210, 210);
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.5px;
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
 }
 
@@ -1322,7 +1372,7 @@ ul li a:hover {
   color: white;
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.5px;
-  font-size: 25px;
+  font-size: 20px;
   transition: all 0.5s ease;
   position: relative;
   cursor: pointer;
@@ -1346,6 +1396,19 @@ ul li a:hover {
 
 @media (max-width: 480px) {
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #6a11cb rgb(34, 34, 34);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
   body {
     overflow-x: hidden;
     box-sizing: border-box;
@@ -1358,7 +1421,7 @@ ul li a:hover {
   }
 
   .logo {
-    width: 30%;
+    width: 40%;
     margin-left: 5px;
   }
 
@@ -1372,49 +1435,88 @@ ul li a:hover {
 
   #hamburger {
     display: block;
+    color: rgb(215, 213, 213);
+    font-size: 30px;
+    padding-right: 10px;
+  }
+
+
+  #sign-in {
+    color: white;
+    font-size: 20px;
+    margin-right: 70px;
+    transition: all 0.5s ease;
+  }
+
+  #sign-in:hover {
+    background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.3);
   }
 
   .main-section {
     background: linear-gradient(rgba(2, 6, 23, .75)), url('alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100dvh;
+    min-height: 100vh;
     background-position: center;
+    width: 100%;
+  }
+
+  .main-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
   }
 
   .main-head {
-    width: 90%;
-    font-size: 50px;
-    padding-top: 45px;
-    margin: auto;
+    width: 100%;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-top: 120px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
-    margin-top: 100px;
+
   }
 
   .sub-head {
-    width: fit-content;
-    margin: auto;
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
-    padding: 0px 20px;
-    font-size: 25px;
-    line-height: 40px;
-    align-items: start;
+
   }
 
   .main-btn-container {
     white-space: nowrap;
-    margin: auto;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
     text-align: center;
+
+
   }
 
   .start-learning {
-    font-size: 15px;
-
+    font-size: 13px;
+    margin: 10px 20px;
+    padding: 10px 10px;
   }
 
   .contact-info {
-    font-size: 15px;
+    font-size: 13px;
+    margin: 10px 20px;
+    padding: 9px 10px;
+    margin-left: -5px;
   }
 
   .main-review-img {
@@ -1426,6 +1528,8 @@ ul li a:hover {
     margin-left: 0px;
     margin-top: 20px;
     padding-bottom: 10px;
+    text-align: center;
+
   }
 
   .main-img-graduation {
@@ -1457,13 +1561,12 @@ ul li a:hover {
 
   #scrolltotop {
     right: 18px;
-    bottom: 20px;
+    bottom: 10px;
     top: auto;
     font-size: 12px;
     padding: 8px 12px;
     border-radius: 50px;
   }
-
 
   /* Achievements Section */
 
@@ -1475,16 +1578,10 @@ ul li a:hover {
     flex-direction: column;
     gap: 90px;
     box-shadow: 0px 0px 20px rgba(199, 166, 255, 0.55);
-    padding: 15px 20px;
+    padding: 15px 0px;
     border-radius: 25px;
     margin-top: 50px;
-    transition: all 0.5s ease;
   }
-
-  .achievements-section:hover {
-    transform: scale(1.1);
-  }
-
 
   .achievement2 {
     border: none;
@@ -1522,6 +1619,22 @@ ul li a:hover {
     flex-direction: column;
   }
 
+  .why-text {
+    color: rgb(87, 86, 86);
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+  }
+
+  .why-emoji1 {
+    position: absolute;
+    bottom: 130px;
+    right: 100px;
+    padding-bottom: 50px;
+  }
+
+
   /* Services Container */
 
   .services-container {
@@ -1535,6 +1648,7 @@ ul li a:hover {
     margin-top: 50px;
     gap: 90px;
     flex-direction: column;
+    padding: 10px 5px !important;
   }
 
   .service-heading {
@@ -1563,7 +1677,92 @@ ul li a:hover {
   }
 
 
+
+  .service-title {
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 25px;
+    margin: 10px 15px;
+    color: black;
+  }
+
+  .service-text {
+    color: rgb(87, 86, 86);
+    width: 265px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+
+  .service-options {
+    line-height: 50px;
+    font-weight: 500;
+    color: rgb(37, 37, 37);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    padding-left: 15px;
+  }
+
+
+  #check {
+    background: linear-gradient(135deg, #6a11cb, #9644e2);
+    color: white;
+    padding: 5px 6px;
+    border-radius: 15px;
+    font-size: 10px;
+  }
+
+  .services-learn-more {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #6a11cb, #9644e2);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .service-link {
+    text-decoration: none;
+    color: white;
+  }
+
+  #bolt {
+    background: linear-gradient(135deg, #6a11cb, #9644e2);
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+
+
+
+  #rocket {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 45px;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
+
+  .services-section1 {
+    padding: 10px 0px !important;
+  }
+
   /* About Section */
+
+  .about-us-container {
+    background: radial-gradient(circle at center, #50545a 0%, #2b2d31 45%, #141518 80%, #0b0c0e 100%);
+    margin-top: 130px;
+    width: 100%;
+  }
+
+  .about-us-container2 {
+    background: radial-gradient(circle at center, #50545a 0%, #2b2d31 45%, #141518 80%, #0b0c0e 100%);
+  }
 
   .about-us-section1 {
     display: flex;
@@ -1572,8 +1771,13 @@ ul li a:hover {
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 0px;
     gap: 10px;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-wrap: none;
   }
 
 
@@ -1582,16 +1786,22 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 0px;
+    gap: 10px;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-wrap: none;
   }
 
   .about-first-subtext {
     color: rgb(163, 159, 159);
     font-family: 'Poppins', sans-serif;
-    width: 330px;
-    font-size: 20px;
+    width: 100%;
+    font-size: 15px;
     letter-spacing: 0.5px;
     line-height: 30px;
     text-shadow: 0px 0px 1px rgba(199, 166, 255, 0.35);
@@ -1599,17 +1809,19 @@ ul li a:hover {
 
   .about-img1 {
     height: 50%;
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
-    text-align: center;
+    margin-right: 50px;
   }
 
   .about-img2 {
     height: 50%;
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
-    margin: auto;
+    margin-left: 10px;
+    margin-bottom: 20px;
   }
+
 
   /* Courses Section */
 
@@ -1623,20 +1835,25 @@ ul li a:hover {
   }
 
   .specialized-tracks-heading {
-    font-size: 35px;
+    font-size: 30px;
     color: black;
     font-weight: 600;
-    padding-left: 35px;
     font-family: 'Poppins', sans-serif;
   }
 
   .specialized-tracks-subheading {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
-    padding-left: 35px;
     color: rgb(89, 88, 88);
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .explore-courses {
+    color: #6a11cb;
+    padding: 0px 10px !important;
+    margin-bottom: 30px;
+
   }
 
   .cyber-security-img1 {
@@ -1670,6 +1887,7 @@ ul li a:hover {
     letter-spacing: 0.5px;
     color: rgb(89, 88, 88);
     line-height: 30px;
+    width: 270px;
   }
 
   .cyber-security-img1 {
@@ -1683,70 +1901,6 @@ ul li a:hover {
     width: 90%;
   }
 
-  /* Hiring graduates section */
-
-  .hire-graduates-container {
-    margin-top: 120px;
-    background-color: rgba(221, 216, 216, 0.936);
-  }
-
-  .hire-graduates-heading {
-    color: #524166;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.5px;
-    font-size: 30px;
-    font-weight: 600;
-    padding-top: 50px;
-  }
-
-  .amazon {
-    transition: all 0.5s ease;
-  }
-
-  .amazon:hover {
-    transform: scale(1.2);
-  }
-
-  .netflix {
-    width: 50%;
-    margin-left: 55px;
-    transition: all 0.5s ease;
-  }
-
-  .netflix:hover {
-    transform: scale(1.2);
-  }
-
-  .first-bank {
-    width: 60%;
-    margin-left: 55px;
-    transition: all 0.5s ease;
-  }
-
-  .first-bank:hover {
-    transform: scale(1.2);
-  }
-
-
-  .unity {
-    width: 50%;
-    margin-left: 55px;
-    transition: all 0.5s ease;
-  }
-
-  .unity:hover {
-    transform: scale(1.2);
-  }
-
-  .meta {
-    width: 50%;
-    margin-left: 55px;
-    transition: all 0.5s ease;
-  }
-
-  .meta:hover {
-    transform: scale(1.2);
-  }
 
   /* Students Review Container */
 
@@ -1778,6 +1932,67 @@ ul li a:hover {
     align-items: center;
     flex-direction: column;
     gap: 100px;
+  }
+
+  .review-section {
+    padding: 10px 10px !important;
+  }
+
+  .review-emoji {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .review-stars {
+    color: rgb(225, 194, 19);
+    font-size: 15px;
+    filter: blur(0px 0px 1px rgb(225, 194, 19));
+    padding-left: 10px;
+  }
+
+  .quote-right {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 50px;
+    padding-right: 10px;
+  }
+
+  .review-text {
+    width: 250px;
+    font-size: 18px;
+    color: rgb(87, 86, 86);
+  }
+
+  .review-student-img {
+    display: inline-block;
+  }
+
+  .review-student-img2 {
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+  }
+
+  .review-user-container {
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 10px;
+  }
+
+  .review-user-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+  }
+
+  .review-user-title {
+    background: linear-gradient(135deg, #6a11cb, #9644e2);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', monospace;
   }
 
 
@@ -1814,7 +2029,7 @@ ul li a:hover {
 
   .faqs-subheading-text {
     color: rgb(87, 86, 86);
-    width: 400px;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
     text-align: center;
@@ -1850,7 +2065,12 @@ ul li a:hover {
     max-width: 85%;
   }
 
+
   /* Join Now Container */
+
+  .join-now-section {
+    padding: 10px auto !important;
+  }
 
   .join-now-heading {
     font-family: 'JetBrains Mono', monospace;
@@ -1875,26 +2095,32 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .sign-up-btn {
     background-color: rgb(232, 229, 229);
     border: none;
-    padding: 12px 20px;
+    padding: 12px 15px;
     border-radius: 5px;
     color: black;
     font-weight: 500;
     text-align: center;
+    font-size: 13px;
   }
 
   .closing-contact-btn {
     background: transparent;
     border-radius: 5px;
     color: white;
-    padding: 9px 20px;
+    padding: 11px 15px;
     border: 2px solid white;
-    font-size: 18px;
+    font-size: 15px;
     margin-left: 10px;
+    font-size: 12px;
+
   }
 
   /* Footer Section */
@@ -1908,6 +2134,12 @@ ul li a:hover {
     padding-left: 10px;
   }
 
+  .footer-text {
+    width: 250px;
+    color: rgb(189, 187, 187);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
   .second-footer {
     background: linear-gradient(rgba(2, 6, 23, .70));
     display: flex;
@@ -1918,7 +2150,7 @@ ul li a:hover {
     padding-left: 10px;
     padding-right: 10px;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   .learning-path-container,
@@ -1932,6 +2164,30 @@ ul li a:hover {
     align-items: center;
     margin: auto;
     color: white;
+    font-size: 5px;
+    white-space: nowrap;
+  }
+
+  .copyright {
+    color: rgb(186, 183, 183);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  #legals {
+    color: rgb(186, 183, 183);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
+
+  .legals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
 }

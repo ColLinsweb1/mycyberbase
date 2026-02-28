@@ -14,6 +14,7 @@ const sr = ScrollReveal (
 sr.reveal(`.logo-container`, {origin: 'left'})
 sr.reveal(`.ul`, { origin: 'left', delay: 500})
 sr.reveal(`.get-started-container`, { origin: 'left', delay: 1000})
+sr.reveal(`.sign-in`, { origin: 'left', delay: 800})
 sr.reveal(`.main-head`, {interval: 100})
 sr.reveal(`.sub-head`, {origin: 'left', delay: 300})
 sr.reveal(`.about-us`, {interval: 100})
@@ -46,7 +47,6 @@ sr.reveal(`.join-now-container`, {rotate : {y : 90}, origin: 'left', opacity: 0,
 sr.reveal(`.learning-path-container`, {origin : 'top', delay: 200})
 sr.reveal(`.quick-links-section`, {origin : 'top', delay: 400})
 sr.reveal(`.support-container`, {origin : 'top', delay: 600})
-sr.reveal(`.second-footer`, {origin : 'bottom'})
 sr.reveal(`.about-img1`, {origin: 'top'})
 sr.reveal(`.about-img2`, {origin : 'bottom'})
 sr.reveal(`.our-mission`, {origin: 'left'})
@@ -59,6 +59,10 @@ sr.reveal(`.contact-head, .contact-subhead`, {origin: 'top'})
 sr.reveal(`.form-section`, {origin: 'left'})
 sr.reveal(`.form-contact-info-container`, {origin: 'right'})
 sr.reveal(`.contact-shortcut-container`, {origin: 'top', delay : 200})
+sr.reveal(`.hero-text`, {origin: 'bottom'})
+sr.reveal(`.first-service`, {origin : 'bottom', delay: 200})
+sr.reveal(`.sign-in-form`, {origin: 'top', delay: 500})
+sr.reveal(`.float-end`, {origin: 'left', delay: 500})
 
 
 
@@ -110,3 +114,4 @@ contactInfoLink.addEventListener('click', (e)=> {
         behaviour: 'smooth'
     });
 });
+

@@ -10,19 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-/* Header Section */
-
-.main-section {
-  background: linear-gradient(rgba(2, 6, 23, .75)), url('services-main-page.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-
-}
-
 /* Header Section */
 
 .main-container {
@@ -139,24 +126,16 @@ ul li a:hover {
   color: transparent;
 }
 
-#sign-in {
-color: white;
-font-size: 20px;
-margin-right: 25px;
-margin-top: 10px;
-transition: all 0.5s ease;
-}
-
-#sign-in:hover {
-  background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
-  background-clip: text;
-  color: transparent;
-  transform: scale(1.3);
+#sign-up {
+  color: white;
+  font-size: 20px;
+  margin-right: 25px;
+  margin-top: 10px;
 }
 
 .get-started {
   white-space: nowrap;
-  margin-right: 40px;
+  margin-right: 20px;
   background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
   padding: 12px 15px;
   border-radius: 5px;
@@ -181,141 +160,6 @@ transition: all 0.5s ease;
   text-decoration: none;
 }
 
-
-/* Services Page */
-
-
-.main-head {
-  color: white;
-  padding-top: 115px;
-  font-size: 40px;
-  font-weight: 700;
-  font-family: 'JetBrains Mono', monospace;
-  margin-left: 30px;
-  margin-bottom: 5px;
-  letter-spacing: 1px;
-}
-
-.digital {
-  background: linear-gradient(135deg, #6a11cb, #9644e2);
-  background-clip: text;
-  color: transparent;
-  filter: drop-shadow(0px 0px 2px #6a11cb);
-}
-
-.sub-head {
-  color: #f8fafc;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 18px;
-  opacity: 0.9;
-  letter-spacing: 0.5px;
-  text-shadow: 0px 0px 8px rgba(199, 166, 255, 0.35);
-  line-height: 30px;
-}
-
-.start-learning {
-  background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
-  border-radius: 5px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  margin-left: 30px;
-  margin-top: 15px;
-  padding: 12px 20px;
-  border: none;
-  font-size: 18px;
-  transition: all 0.5s ease;
-}
-
-.start-learning:hover {
-  background-color: rgb(110, 30, 110);
-  transform: translateY(-5%);
-  filter: drop-shadow(0px 0px 2px white);
-  opacity: 0.9;
-}
-
-.start-learning-link {
-  text-decoration: none;
-  color: white;
-}
-
-
-.contact-info {
-  margin-right: 40px;
-  background: transparent;
-  border-radius: 5px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  margin-left: 30px;
-  margin-top: 15px;
-  padding: 12px 20px;
-  border: 2px solid white;
-  font-size: 18px;
-  backdrop-filter: blur(10px);
-  transition: all 0.5s ease;
-}
-
-.contact-info:hover {
-  background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
-  transform: translateY(-5%);
-  filter: drop-shadow(0px 0px 2px white);
-  opacity: 0.9;
-}
-
-.contact-info-link {
-  text-decoration: none;
-  color: white;
-}
-
-.main-review-img {
-  margin-top: 15px;
-  margin-left: 30px;
-  position: relative;
-  display: inline-block;
-}
-
-.main-review-img1,
-.main-review-img2,
-.main-review-img3,
-.main-review-img4,
-.main-review-img5 {
-  width: 34px;
-  height: 34px;
-  border-radius: 17px;
-}
-
-.main-review-img2 {
-  position: absolute;
-  left: 25px;
-}
-
-.main-review-img3 {
-  position: absolute;
-  left: 45px;
-}
-
-.main-review-img4 {
-  position: absolute;
-  left: 65px;
-}
-
-.main-review-img5 {
-  position: absolute;
-  left: 85px;
-}
-
-.review-figure {
-  display: inline-block;
-  margin-left: 110px;
-  vertical-align: bottom;
-}
-
-.main-img-graduation {
-  position: relative;
-  margin-top: 72px;
-}
-
-/* Whatsapp-btn */
-
 /* Whatsapp-btn */
 
 #whatsappbtn {
@@ -335,7 +179,25 @@ transition: all 0.5s ease;
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s ease;
+  animation: pulse 2s linear infinite;
 }
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 #whatsappbtn.show {
   opacity: 1;
@@ -347,7 +209,7 @@ transition: all 0.5s ease;
   transform: scale(1.1);
 }
 
-/* Arrow Scroll to Top */
+/* Arrow-top */
 
 #scrolltotop {
   position: fixed;
@@ -372,73 +234,240 @@ transition: all 0.5s ease;
   transform: translateY(-40%);
 }
 
+/* Offcanvas-menubar */
 
-.services-head {
-  font-family: 'Poppins', sans-serif;
+.offcanvas {
+  z-index: 2000;
+  background: linear-gradient(rgba(8, 6, 28, 1)) !important;
+}
+
+#hamburger {
+  display: none;
+  color: rgb(215, 213, 213);
+  font-size: 35px;
+  padding-right: 20px;
+  position: fixed;
+  right: 10px;
+}
+
+.offcanvas-header {
+  padding-top: 30px;
+}
+
+.offcanvas-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: rgb(57, 56, 56);
 }
 
-.main-services-container {
-  margin-top: 100px;
+.btn-close {
+  font-size: 18px;
 }
 
-.first-service-container {
+.offcanvas-container {
+  line-height: 65px;
+  font-size: 30px;
+  padding-top: 25px;
+}
+
+
+.offcanvas-list {
+  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-}
-
-.first-service {
-  border-radius: 10px;
-  position: relative;
-}
-
-.first-service-img {
-  width: 100%;
-  height: 35vh;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-#services-emoji {
-  padding: 16px 15px;
-  border-radius: 55px;
-  font-size: 17px;
-  background-color: #f1ecf3;
-  color: #802fcc;
-  position: absolute;
-  bottom: 210px;
-  right: 125px;
-}
-
-.service-title {
+  gap: 50px;
+  text-transform: uppercase;
+  color: rgb(213, 210, 210);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 18px;
-  background: linear-gradient(135deg, #6a11cb, #9644e2);
-  background-clip: text;
-  color: transparent;
-  font-weight: 600;
-}
-
-.service-text {
-  color: rgb(87, 86, 86);
-  font-family: 'Poppins', sans-serif;
-  width: 280px;
   letter-spacing: 0.5px;
-  font-size: 15px;
+  font-size: 20px;
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
 }
 
-.services-get-started {
+
+#offcanvas-list2 {
+  padding-left: 20px;
+}
+
+.line {
+  width: 20%;
+  height: 2px;
+  background-color: #6a11cb;
+}
+
+
+.begin-link:hover {
+  background-color: rgb(110, 30, 110);
+  transform: translateY(-5%);
+  filter: drop-shadow(0px 0px 2px white);
+  opacity: 0.9;
+}
+
+.begin-link {
+  margin-right: 10px;
+  background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
+  border-radius: 5px;
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+#offcanvas-social-platform {
+  font-size: 28px;
+  margin-bottom: 40px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+#offcanvas-social-platform:hover {
+  transform: scale(1.3);
+}
+
+.sign-in-container {
+  margin-top: 100px;
+}
+
+#sign-up {
+color: white;
+font-size: 20px;
+margin-right: 25px;
+margin-top: 10px;
+transition: all 0.5s ease;
+}
+
+#sign-up:hover {
+  background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
+  background-clip: text;
+  color: transparent;
+  transform: scale(1.3);
+}
+
+.sign-in-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.sign-in-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
   background: linear-gradient(135deg, #6a11cb, #9644e2);
   background-clip: text;
   color: transparent;
-  font-size: 15px;
 }
 
-/* Join Now Container */
+.sign-in-content {
+  width: 45%;
+  margin-top: 10px;
+}
 
+
+.sign-in-description {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  color: rgb(67, 65, 65);
+  font-size: 14px;
+}
+
+form {
+  width: 100%;
+}
+
+
+.input-head {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: rgb(105, 103, 103);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  border: none !important;
+  border-radius: 8px;
+}
+
+
+input,
+select {
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+select {
+height: 9vh;
+font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: rgb(136, 132, 132);
+}
+
+select option {
+  color: rgb(105, 103, 103);
+}
+
+.disabled{
+  color: rgb(136, 132, 132);
+}
+
+#terms {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(105, 103, 103);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+#agreement {
+  background: linear-gradient(135deg, #6a11cb, #9644e2);
+  background-clip: text;
+  color: transparent;
+}
+
+.sign-in-footer-text {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(105, 103, 103);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+
+.input-container {
+  position: relative;
+  
+}
+
+.input-container i {
+  position: absolute;
+  top: 47px;
+  left: 15px;
+  color: rgb(136, 132, 132);
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.form-control::placeholder {
+  color: rgb(136, 132, 132);
+  padding-left: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
 
 .join-now-container {
 
@@ -539,7 +568,7 @@ transition: all 0.5s ease;
   font-size: 20px;
   color: white;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .footer-icon {
@@ -595,121 +624,33 @@ transition: all 0.5s ease;
   gap: 20px;
 }
 
-/* Offcanvas-menubar */
 
-.offcanvas {
-  z-index: 2000;
-  background: linear-gradient(rgba(8, 6, 28, 1)) !important;
-}
-
-#hamburger {
-  display: none;
-  color: rgb(215, 213, 213);
-  font-size: 30px;
-  padding-right: 20px;
-  position: fixed;
-  right: 3px;
-}
-
-.offcanvas-header {
-  padding-top: 30px;
-}
-
-.offcanvas-title {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.btn-close {
-  font-size: 18px;
-}
-
-.offcanvas-container {
-  line-height: 65px;
-  font-size: 30px;
-  padding-top: 25px;
-}
-
-
-.offcanvas-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  text-transform: uppercase;
-  color: rgb(213, 210, 210);
-  font-family: 'JetBrains Mono', monospace;
-  letter-spacing: 0.5px;
-  font-size: 20px;
-  text-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
-}
-
-
-#offcanvas-list2 {
-  padding-left: 20px;
-}
-
-.line {
-  width: 20%;
-  height: 2px;
-  background-color: #6a11cb;
-}
-
-
-.begin-link:hover {
-  background-color: rgb(110, 30, 110);
-  transform: translateY(-5%);
-  filter: drop-shadow(0px 0px 2px white);
-  opacity: 0.9;
-}
-
-.begin-link {
-  margin-right: 10px;
-  background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
-  border-radius: 5px;
-  color: white;
-  font-family: 'JetBrains Mono', monospace;
-  letter-spacing: 0.5px;
-  font-size: 20px;
-  transition: all 0.5s ease;
-  position: relative;
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-}
-
-#offcanvas-social-platform {
-  font-size: 28px;
-  margin-bottom: 40px;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-
-#offcanvas-social-platform:hover {
-  transform: scale(1.3);
-}
-
+/* Mobile Responsiveness */
 
 @media (max-width: 480px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #6a11cb rgb(34, 34, 34);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
   body {
     overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .main-container {
     top: -5px;
     backdrop-filter: blur(10px);
     background: linear-gradient(rgba(8, 6, 28, 1));
-  }
-
-  .main-section {
-    background: linear-gradient(rgba(2, 6, 23, .75)), url('aboutpage-main-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    background-position: bottom;
   }
 
   .logo {
@@ -727,70 +668,23 @@ transition: all 0.5s ease;
 
   #hamburger {
     display: block;
+    color: rgb(215, 213, 213);
+    font-size: 30px;
+    padding-right: 10px;
   }
 
-  #sign-in {
+   #sign-up {
     color: white;
     font-size: 20px;
     margin-right: 70px;
     transition: all 0.5s ease;
   }
 
-  #sign-in:hover {
+  #sign-up:hover {
     background: linear-gradient(135deg, #6a11cb 100%, #2575fc 50%);
     background-clip: text;
     color: transparent;
     transform: scale(1.3);
-  }
-
-
-  .about-us {
-    width: 100%;
-    font-size: 40px;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center !important;
-  }
-
-  .about-us-text {
-    font-size: 20px;
-    line-height: 35px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .main-btn-container {
-    white-space: nowrap;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    text-align: center;
-  }
-
-  .start-learning {
-    font-size: 13px;
-    margin: 10px 20px;
-    padding: 10px 10px;
-  }
-
-  .contact-info {
-    font-size: 13px;
-    margin: 10px 20px;
-    padding: 9px 10px;
-    margin-left: -5px;
-  }
-
-  .main-review-img {
-    margin-top: 30px;
-  }
-
-  .review-figure {
-    display: block;
-    margin-left: 0px;
-    margin-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
   }
 
   #whatsappbtn {
@@ -822,63 +716,157 @@ transition: all 0.5s ease;
   }
 
 
-  .first-service-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 60px;
-  }
+  .sign-in-container {
+  margin-top: 100px;
+}
 
-  .first-service {
-    border-radius: 10px;
-    position: relative;
-  }
 
-  .first-service-img {
-    width: 100%;
-    height: 25vh;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
+.sign-in-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  #services-emoji {
-    padding: 16px 15px;
-    border-radius: 55px;
-    font-size: 17px;
-    background-color: #f1ecf3;
-    color: #802fcc;
-    position: absolute;
-    bottom: 235px;
-    right: 115px;
-  }
 
-  .service-title {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 18px;
-    background: linear-gradient(135deg, #6a11cb, #9644e2);
-    background-clip: text;
-    color: transparent;
-    font-weight: 600;
-  }
+.sign-in-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  background: linear-gradient(135deg, #6a11cb, #9644e2);
+  background-clip: text;
+  color: transparent;
+  width: 100%;
+  text-align: center;
+}
 
-  .service-text {
-    color: rgb(87, 86, 86);
-    font-family: 'Poppins', sans-serif;
-    width: 270px;
-    letter-spacing: 0.5px;
-    font-size: 15px;
-    line-height: 28px;
-  }
+.sign-in-content {
+  width: 100%;
+  margin-top: 10px;
+}
 
-  .services-get-started {
-    background: linear-gradient(135deg, #6a11cb, #9644e2);
-    background-clip: text;
-    color: transparent;
-    font-size: 15px;
-  }
 
-  /* Join Now Container */
+.sign-in-description {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  color: rgb(67, 65, 65);
+  font-size: 14px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first-and-last-name {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+
+
+.input-head {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: rgb(105, 103, 103);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  border: none !important;
+  border-radius: 8px;
+}
+
+
+input,
+select {
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+  width: 100% !important;
+  
+}
+
+select {
+height: 9vh;
+font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: rgb(136, 132, 132);
+}
+
+select option {
+  color: rgb(105, 103, 103);
+}
+
+.disabled{
+  color: rgb(136, 132, 132);
+}
+
+#terms {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(105, 103, 103);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+#agreement {
+  background: linear-gradient(135deg, #6a11cb, #9644e2);
+  background-clip: text;
+  color: transparent;
+}
+
+.sign-in-footer-text {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(105, 103, 103);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.input-container {
+  position: relative;
+  
+}
+
+.input-container i {
+  position: absolute;
+  top: 47px;
+  left: 15px;
+  color: rgb(136, 132, 132);
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.form-control::placeholder {
+  color: rgb(136, 132, 132);
+  padding-left: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+.first-and-last-name {
+  margin-bottom: 10px;
+}
+
+.email-and-address {
+  margin-bottom: 10px;
+}
+
+.first-and-last-name,
+.email-and-address {
+  flex-direction: column;
+  gap: 0 !important;
+}
+
+ /* Join Now Container */
 
   .join-now-section {
     padding: 10px auto !important;
@@ -1001,8 +989,6 @@ transition: all 0.5s ease;
     align-items: center;
     gap: 20px;
   }
-
-
 
 
 }
