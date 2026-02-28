@@ -183,6 +183,8 @@ ul li a:hover {
 }
 
 
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -336,11 +338,11 @@ ul li a:hover {
 }
 
 #sign-up {
-color: white;
-font-size: 20px;
-margin-right: 25px;
-margin-top: 10px;
-transition: all 0.5s ease;
+  color: white;
+  font-size: 20px;
+  margin-right: 25px;
+  margin-top: 10px;
+  transition: all 0.5s ease;
 }
 
 #sign-up:hover {
@@ -409,8 +411,8 @@ select {
 }
 
 select {
-height: 9vh;
-font-family: 'Poppins', sans-serif;
+  height: 9vh;
+  font-family: 'Poppins', sans-serif;
   font-size: 10px;
   letter-spacing: 0.5px;
   color: rgb(136, 132, 132);
@@ -420,7 +422,7 @@ select option {
   color: rgb(105, 103, 103);
 }
 
-.disabled{
+.disabled {
   color: rgb(136, 132, 132);
 }
 
@@ -448,7 +450,7 @@ select option {
 
 .input-container {
   position: relative;
-  
+
 }
 
 .input-container i {
@@ -673,7 +675,7 @@ select option {
     padding-right: 10px;
   }
 
-   #sign-up {
+  #sign-up {
     color: white;
     font-size: 20px;
     margin-right: 70px;
@@ -717,156 +719,156 @@ select option {
 
 
   .sign-in-container {
-  margin-top: 100px;
-}
+    margin-top: 100px;
+  }
 
 
-.sign-in-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .sign-in-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
-.sign-in-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  background: linear-gradient(135deg, #6a11cb, #9644e2);
-  background-clip: text;
-  color: transparent;
-  width: 100%;
-  text-align: center;
-}
+  .sign-in-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    background: linear-gradient(135deg, #6a11cb, #9644e2);
+    background-clip: text;
+    color: transparent;
+    width: 100%;
+    text-align: center;
+  }
 
-.sign-in-content {
-  width: 100%;
-  margin-top: 10px;
-}
-
-
-.sign-in-description {
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.5px;
-  color: rgb(67, 65, 65);
-  font-size: 14px;
-}
-
-form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.first-and-last-name {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: start !important;
-}
+  .sign-in-content {
+    width: 100%;
+    margin-top: 10px;
+  }
 
 
-.input-head {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: rgb(105, 103, 103);
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-}
+  .sign-in-description {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    color: rgb(67, 65, 65);
+    font-size: 14px;
+  }
 
-.form-control {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0px;
-  border: none !important;
-  border-radius: 8px;
-}
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .first-and-last-name {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: start !important;
+  }
 
 
-input,
-select {
-  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
-  width: 100% !important;
-  
-}
+  .input-head {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgb(105, 103, 103);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
 
-select {
-height: 9vh;
-font-family: 'Poppins', sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.5px;
-  color: rgb(136, 132, 132);
-}
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none !important;
+    border-radius: 8px;
+  }
 
-select option {
-  color: rgb(105, 103, 103);
-}
 
-.disabled{
-  color: rgb(136, 132, 132);
-}
+  input,
+  select {
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 100% !important;
 
-#terms {
-  font-family: 'Poppins', sans-serif;
-  color: rgb(105, 103, 103);
-  font-size: 14px;
-  letter-spacing: 0.5px;
-}
+  }
 
-#agreement {
-  background: linear-gradient(135deg, #6a11cb, #9644e2);
-  background-clip: text;
-  color: transparent;
-}
+  select {
+    height: 9vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: rgb(136, 132, 132);
+  }
 
-.sign-in-footer-text {
-  font-family: 'Poppins', sans-serif;
-  color: rgb(105, 103, 103);
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  text-align: center;
-}
+  select option {
+    color: rgb(105, 103, 103);
+  }
 
-.input-container {
-  position: relative;
-  
-}
+  .disabled {
+    color: rgb(136, 132, 132);
+  }
 
-.input-container i {
-  position: absolute;
-  top: 47px;
-  left: 15px;
-  color: rgb(136, 132, 132);
-  font-size: 14px;
-  padding-right: 10px;
-}
+  #terms {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(105, 103, 103);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
 
-.form-control::placeholder {
-  color: rgb(136, 132, 132);
-  padding-left: 30px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  z-index: 10;
-}
+  #agreement {
+    background: linear-gradient(135deg, #6a11cb, #9644e2);
+    background-clip: text;
+    color: transparent;
+  }
 
-.first-and-last-name {
-  margin-bottom: 10px;
-}
+  .sign-in-footer-text {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(105, 103, 103);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
 
-.email-and-address {
-  margin-bottom: 10px;
-}
+  .input-container {
+    position: relative;
 
-.first-and-last-name,
-.email-and-address {
-  flex-direction: column;
-  gap: 0 !important;
-}
+  }
 
- /* Join Now Container */
+  .input-container i {
+    position: absolute;
+    top: 47px;
+    left: 15px;
+    color: rgb(136, 132, 132);
+    font-size: 14px;
+    padding-right: 10px;
+  }
+
+  .form-control::placeholder {
+    color: rgb(136, 132, 132);
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    z-index: 10;
+  }
+
+  .first-and-last-name {
+    margin-bottom: 10px;
+  }
+
+  .email-and-address {
+    margin-bottom: 10px;
+  }
+
+  .first-and-last-name,
+  .email-and-address {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+
+  /* Join Now Container */
 
   .join-now-section {
     padding: 10px auto !important;

@@ -1511,7 +1511,7 @@ marquee div {
     }
 
     .review-section {
-        padding: 10px 10px !important;
+        padding: 10px 20px !important;
     }
 
     .review-emoji {
@@ -1583,6 +1583,10 @@ marquee div {
 
     .value-cybersecurity-text {
         width: 235px;
+    }
+
+    .first-value {
+        padding : 15px 20px !important;
     }
 
     .team-section {

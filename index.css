@@ -1622,7 +1622,7 @@ ul li a:hover {
   .why-text {
     color: rgb(87, 86, 86);
     font-family: 'Poppins', sans-serif;
-    width: 270px;
+    width: 250px;
     letter-spacing: 0.5px;
     line-height: 25px;
   }
@@ -2001,7 +2001,7 @@ ul li a:hover {
   }
 
   .review-section {
-    padding: 10px 10px !important;
+    padding: 10px 20px !important;
   }
 
   .review-emoji {

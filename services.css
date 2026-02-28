@@ -140,11 +140,11 @@ ul li a:hover {
 }
 
 #sign-in {
-color: white;
-font-size: 20px;
-margin-right: 25px;
-margin-top: 10px;
-transition: all 0.5s ease;
+  color: white;
+  font-size: 20px;
+  margin-right: 25px;
+  margin-top: 10px;
+  transition: all 0.5s ease;
 }
 
 #sign-in:hover {
@@ -335,7 +335,25 @@ transition: all 0.5s ease;
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s ease;
+  animation: pulse 2s linear infinite;
+
 }
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 #whatsappbtn.show {
   opacity: 1;
@@ -346,6 +364,7 @@ transition: all 0.5s ease;
 .whatsapp-btn:hover {
   transform: scale(1.1);
 }
+
 
 /* Arrow Scroll to Top */
 
