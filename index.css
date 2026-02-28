@@ -1544,7 +1544,7 @@ ul li a:hover {
     font-size: 28px;
     position: fixed;
     bottom: 66px;
-    right: 45px;
+    right: 60px;
     height: 55px;
     width: 55px;
     border-radius: 50%;
@@ -1560,7 +1560,7 @@ ul li a:hover {
   }
 
   #scrolltotop {
-    right: 48px;
+    right: 55px;
     bottom: 10px;
     top: auto;
     font-size: 12px;
