@@ -1226,7 +1226,7 @@ marquee div {
         font-size: 28px;
         position: fixed;
         bottom: 66px;
-        right: 10px;
+        right: 25px;
         height: 55px;
         width: 55px;
         border-radius: 50%;
@@ -1242,7 +1242,7 @@ marquee div {
     }
 
     #scrolltotop {
-        right: 18px;
+        right: 30px;
         bottom: 10px;
         top: auto;
         font-size: 12px;
@@ -1586,7 +1586,7 @@ marquee div {
     }
 
     .first-value {
-        padding : 15px 20px !important;
+        padding : 20px 20px !important;
     }
 
     .team-section {
@@ -1678,7 +1678,7 @@ marquee div {
         gap: 30px;
         position: absolute;
         bottom: 15px;
-        left: 42px;
+        left: 38px;
     }
 
 
