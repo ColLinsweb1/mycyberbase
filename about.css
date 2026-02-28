@@ -1429,7 +1429,7 @@ marquee div {
         align-items: center;
         flex-direction: column;
         gap: 50px;
-        padding-left: 25px !important;
+        padding-left: 20px !important;
     }
 
     .about-goals-head {
@@ -1456,7 +1456,7 @@ marquee div {
     .about-goal-text {
         color: rgb(78, 75, 75);
         font-family: 'Poppins', sans-serif;
-        width: 300px;
+        width: 100%;
         padding-right: 45px;
         font-size: 17px;
         line-height: 30px;

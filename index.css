@@ -890,7 +890,7 @@ ul li a:hover {
 }
 
 .netflix {
-  width: 50%;
+  width: 20%;
   margin-left: 55px;
   transition: all 0.5s ease;
 }
@@ -900,7 +900,7 @@ ul li a:hover {
 }
 
 .first-bank {
-  width: 65%;
+  width: 20%;
   margin-left: 55px;
   transition: all 0.5s ease;
 }
@@ -911,7 +911,7 @@ ul li a:hover {
 
 
 .unity {
-  width: 55%;
+  width: 20%;
   margin-left: 55px;
   transition: all 0.5s ease;
 }
@@ -921,7 +921,7 @@ ul li a:hover {
 }
 
 .meta {
-  width: 55%;
+  width: 20%;
   margin-left: 55px;
   transition: all 0.5s ease;
 }
@@ -1304,10 +1304,10 @@ ul li a:hover {
 #hamburger {
   display: none;
   color: rgb(215, 213, 213);
-  font-size: 35px;
+  font-size: 30px;
   padding-right: 20px;
   position: fixed;
-  right: 10px;
+  right: 3px;
 }
 
 .offcanvas-header {
@@ -1396,19 +1396,6 @@ ul li a:hover {
 
 @media (max-width: 480px) {
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scrollbar-width: thin;
-    scrollbar-color: #6a11cb rgb(34, 34, 34);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-
   body {
     overflow-x: hidden;
   }
@@ -1419,8 +1406,17 @@ ul li a:hover {
     background: linear-gradient(rgba(8, 6, 28, 1));
   }
 
+  .main-section {
+  background: linear-gradient(rgba(2, 6, 23, .75)), url('alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+
+
   .logo {
-    width: 40%;
+    width: 30%;
     margin-left: 5px;
   }
 
@@ -1434,9 +1430,6 @@ ul li a:hover {
 
   #hamburger {
     display: block;
-    color: rgb(215, 213, 213);
-    font-size: 30px;
-    padding-right: 10px;
   }
 
 
@@ -1460,7 +1453,6 @@ ul li a:hover {
     background-size: cover;
     min-height: 100vh;
     background-position: center;
-    width: 100%;
   }
 
   .main-container1 {
@@ -1901,6 +1893,70 @@ ul li a:hover {
     width: 90%;
   }
 
+  /* Hiring graduates section */
+
+.hire-graduates-container {
+  margin-top: 120px;
+  background-color: rgba(221, 216, 216, 0.936);
+}
+
+.hire-graduates-heading {
+  color: #524166;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 50px;
+}
+
+.amazon {
+  transition: all 0.5s ease;
+}
+
+.amazon:hover {
+  transform: scale(1.2);
+}
+
+.netflix {
+  width: 50%;
+  margin-left: 55px;
+  transition: all 0.5s ease;
+}
+
+.netflix:hover {
+  transform: scale(1.2);
+}
+
+.first-bank {
+  width: 65%;
+  margin-left: 55px;
+  transition: all 0.5s ease;
+}
+
+.first-bank:hover {
+  transform: scale(1.2);
+}
+
+
+.unity {
+  width: 55%;
+  margin-left: 55px;
+  transition: all 0.5s ease;
+}
+
+.unity:hover {
+  transform: scale(1.2);
+}
+
+.meta {
+  width: 55%;
+  margin-left: 55px;
+  transition: all 0.5s ease;
+}
+
+.meta:hover {
+  transform: scale(1.2);
+}
 
   /* Students Review Container */
 
