@@ -11,6 +11,11 @@ html {
 }
 
 
+body {
+    overflow-x: hidden;
+}
+
+
 
 .services-section1,
 .join-now-container {
