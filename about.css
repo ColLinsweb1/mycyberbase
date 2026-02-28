@@ -1022,13 +1022,14 @@ marquee div {
 }
 
 #hamburger {
-    display: none;
-    color: rgb(215, 213, 213);
-    font-size: 30px;
-    padding-right: 20px;
-    position: fixed;
-    right: 3px;
+  display: none;
+  color: rgb(215, 213, 213);
+  font-size: 30px;
+  padding-right: 20px;
+  position: fixed;
+  right: 3px;
 }
+
 
 .offcanvas-header {
     padding-top: 30px;
@@ -1428,6 +1429,7 @@ marquee div {
         align-items: center;
         flex-direction: column;
         gap: 50px;
+        padding-left: 25px !important;
     }
 
     .about-goals-head {
@@ -1642,8 +1644,8 @@ marquee div {
         align-items: center;
         gap: 30px;
         position: absolute;
-        bottom: 920px;
-        left: 22px;
+        bottom: 1020px;
+        left: 42px;
     }
 
     .member-details2 {
@@ -1654,8 +1656,8 @@ marquee div {
         align-items: center;
         gap: 30px;
         position: absolute;
-        bottom: 467px;
-        left: 22px;
+        bottom: 520px;
+        left: 42px;
     }
 
     .member-details3 {
@@ -1667,7 +1669,7 @@ marquee div {
         gap: 30px;
         position: absolute;
         bottom: 15px;
-        left: 22px;
+        left: 42px;
     }
 
 
