@@ -1586,7 +1586,7 @@ marquee div {
     }
 
     .first-value {
-        padding : 20px 20px !important;
+        padding : 20px 20px;
     }
 
     .team-section {
